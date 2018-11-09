@@ -33,9 +33,9 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.Column = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,34 +87,6 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Column
-            // 
-            this.Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column.HeaderText = "Теплица";
-            this.Column.Items.AddRange(new object[] {
-            "Теплица 1",
-            "Теплица 2 ",
-            "Теплица 3",
-            "Теплица 4"});
-            this.Column.Name = "Column";
-            this.Column.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column1.HeaderText = "Растение";
-            this.Column1.Items.AddRange(new object[] {
-            "Тюльпаны",
-            "Розы ",
-            "Пионы ",
-            "Гладиолусы",
-            "Лаванда",
-            "Хризантемы",
-            "Ромашки"});
-            this.Column1.MinimumWidth = 10;
-            this.Column1.Name = "Column1";
-            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -125,6 +97,22 @@
             this.button3.Text = "Сохранить";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // Column
+            // 
+            this.Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column.HeaderText = "Теплица";
+            this.Column.Name = "Column";
+            this.Column.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.HeaderText = "Растение";
+            this.Column1.MinimumWidth = 10;
+            this.Column1.Name = "Column1";
+            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // Form1
             // 
@@ -154,9 +142,9 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridViewComboBoxColumn Column;
         private System.Windows.Forms.DataGridViewComboBoxColumn Column1;
-        private System.Windows.Forms.Button button3;
     }
 }
 

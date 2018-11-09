@@ -55,7 +55,6 @@ namespace WindowsFormsApp1
             {
                 for (int j = 0; j < Save.ColumnCount + 1; j++)
                 {
-                    //worksheet.Rows[i].Columns[j] = Save.Rows[i - 1].Cells[j - 1].Value;
                     worksheet.Rows[i].Columns[j] = Save.Rows[i - 1].Cells[j - 1].Value;
                 }
             }

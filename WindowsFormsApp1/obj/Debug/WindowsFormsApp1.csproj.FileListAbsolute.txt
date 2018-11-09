@@ -11,3 +11,18 @@ C:\Users\TTN\Desktop\безуспешные попытки 3\WindowsFormsApp1\ob
 C:\Users\TTN\Desktop\безуспешные попытки 3\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
 C:\Users\TTN\Desktop\безуспешные попытки 3\WindowsFormsApp1\bin\Debug\Properties\DatabaseBZ.mdf
 C:\Users\TTN\Desktop\безуспешные попытки 3\WindowsFormsApp1\bin\Debug\Properties\DatabaseBZ_log.ldf
+C:\Users\TTN\Source\Repos\hydroponic-garden\WindowsFormsApp1\bin\Debug\Properties\DatabaseBZ.mdf
+C:\Users\TTN\Source\Repos\hydroponic-garden\WindowsFormsApp1\bin\Debug\Properties\DatabaseBZ_log.ldf
+C:\Users\TTN\Source\Repos\hydroponic-garden\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\TTN\Source\Repos\hydroponic-garden\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\TTN\Source\Repos\hydroponic-garden\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\TTN\Source\Repos\hydroponic-garden\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\TTN\Source\Repos\hydroponic-garden\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.ResolveComReference.cache
+C:\Users\TTN\Source\Repos\hydroponic-garden\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\TTN\Source\Repos\hydroponic-garden\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+C:\Users\TTN\Source\Repos\hydroponic-garden\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form3.resources
+C:\Users\TTN\Source\Repos\hydroponic-garden\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\TTN\Source\Repos\hydroponic-garden\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\TTN\Source\Repos\hydroponic-garden\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\TTN\Source\Repos\hydroponic-garden\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\TTN\Source\Repos\hydroponic-garden\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
