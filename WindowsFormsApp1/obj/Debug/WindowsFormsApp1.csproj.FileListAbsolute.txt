@@ -26,3 +26,5 @@ C:\Users\TTN\Source\Repos\hydroponic-garden\WindowsFormsApp1\obj\Debug\WindowsFo
 C:\Users\TTN\Source\Repos\hydroponic-garden\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\TTN\Source\Repos\hydroponic-garden\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\TTN\Source\Repos\hydroponic-garden\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\TTN\Source\Repos\hydroponic-garden\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form4.resources
+C:\Users\TTN\Source\Repos\hydroponic-garden\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form5.resources

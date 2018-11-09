@@ -33,15 +33,16 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.button7 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -60,6 +61,7 @@
             // 
             this.splitContainer1.Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("splitContainer1.Panel1.BackgroundImage")));
             this.splitContainer1.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.splitContainer1.Panel1.Controls.Add(this.button7);
             this.splitContainer1.Panel1.Controls.Add(this.label2);
             this.splitContainer1.Panel1.Controls.Add(this.label1);
             this.splitContainer1.Panel1.Controls.Add(this.button6);
@@ -75,90 +77,10 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.MistyRose;
-            this.splitContainer1.Panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("splitContainer1.Panel2.BackgroundImage")));
             this.splitContainer1.Panel2.Controls.Add(this.chart1);
             this.splitContainer1.Size = new System.Drawing.Size(688, 431);
-            this.splitContainer1.SplitterDistance = 220;
+            this.splitContainer1.SplitterDistance = 253;
             this.splitContainer1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.LightCoral;
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(13, 37);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(185, 33);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Датчик температуры";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.LightCoral;
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(13, 76);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(185, 26);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Датчик увлажнённости воздуха";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.LightCoral;
-            this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(13, 118);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(185, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Датчик освещённости";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.LightCoral;
-            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.Location = new System.Drawing.Point(13, 163);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(185, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Датчик увлажнённости почвы";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.LightCoral;
-            this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button5.Location = new System.Drawing.Point(13, 208);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(185, 23);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Датчик количества удобрений";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.LightCoral;
-            this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button6.Location = new System.Drawing.Point(13, 251);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(185, 23);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Датчик рН";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.MistyRose;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.Firebrick;
-            this.label1.Location = new System.Drawing.Point(24, 331);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 19);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Растет:             ";
             // 
             // label2
             // 
@@ -166,27 +88,129 @@
             this.label2.BackColor = System.Drawing.Color.MistyRose;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.Color.Firebrick;
-            this.label2.Location = new System.Drawing.Point(24, 385);
+            this.label2.Location = new System.Drawing.Point(40, 385);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 19);
+            this.label2.Size = new System.Drawing.Size(94, 19);
             this.label2.TabIndex = 7;
-            this.label2.Text = "HP:             ";
+            this.label2.Text = " HP:             ";
+            this.label2.UseWaitCursor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.MistyRose;
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.Firebrick;
+            this.label1.Location = new System.Drawing.Point(40, 328);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(176, 38);
+            this.label1.TabIndex = 6;
+            this.label1.Text = " Выбрано растение: \r\n ";
+            this.label1.UseWaitCursor = true;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.LightCoral;
+            this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button6.Location = new System.Drawing.Point(40, 247);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(185, 31);
+            this.button6.TabIndex = 5;
+            this.button6.Text = "Датчик рН";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.UseWaitCursor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.LightCoral;
+            this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button5.Location = new System.Drawing.Point(40, 208);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(185, 33);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "Датчик количества удобрений";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.UseWaitCursor = true;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.LightCoral;
+            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button4.Location = new System.Drawing.Point(40, 169);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(185, 33);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Датчик увлажнённости почвы";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.UseWaitCursor = true;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.LightCoral;
+            this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button3.Location = new System.Drawing.Point(40, 130);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(185, 33);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Датчик освещённости";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.UseWaitCursor = true;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.LightCoral;
+            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button2.Location = new System.Drawing.Point(40, 90);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(185, 34);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Датчик увлажнённости воздуха";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.UseWaitCursor = true;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LightCoral;
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Location = new System.Drawing.Point(40, 51);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(185, 33);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Датчик температуры";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.UseWaitCursor = true;
             // 
             // chart1
             // 
+            this.chart1.BackColor = System.Drawing.Color.OrangeRed;
+            this.chart1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.DiagonalRight;
             chartArea1.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(115, 50);
+            this.chart1.Location = new System.Drawing.Point(3, 3);
             this.chart1.Name = "chart1";
+            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SemiTransparent;
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(300, 300);
+            this.chart1.Size = new System.Drawing.Size(428, 425);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
+            this.chart1.Click += new System.EventHandler(this.chart1_Click);
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button7.Location = new System.Drawing.Point(3, 6);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(131, 23);
+            this.button7.TabIndex = 8;
+            this.button7.Text = "Вернуться на Главную";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Form4
             // 
@@ -220,5 +244,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.Button button7;
     }
 }

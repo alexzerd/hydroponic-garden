@@ -56,7 +56,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.LightCoral;
-            this.button1.Location = new System.Drawing.Point(23, 217);
+            this.button1.Location = new System.Drawing.Point(46, 244);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(181, 61);
             this.button1.TabIndex = 6;
@@ -67,7 +67,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.LightCoral;
-            this.button2.Location = new System.Drawing.Point(506, 218);
+            this.button2.Location = new System.Drawing.Point(506, 245);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(181, 60);
             this.button2.TabIndex = 7;
@@ -78,7 +78,8 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.LightCoral;
-            this.button3.Location = new System.Drawing.Point(274, 217);
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Location = new System.Drawing.Point(276, 244);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(181, 61);
             this.button3.TabIndex = 8;
@@ -88,13 +89,14 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Теплица 1",
             "Теплица 2",
             "Теплица 3",
             "Теплица 4"});
-            this.comboBox1.Location = new System.Drawing.Point(23, 159);
+            this.comboBox1.Location = new System.Drawing.Point(46, 161);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 22);
             this.comboBox1.TabIndex = 9;
@@ -102,31 +104,33 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(168, 158);
+            this.button4.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button4.Location = new System.Drawing.Point(177, 160);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 10;
             this.button4.Text = "Перейти";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.MistyRose;
-            this.label2.Font = new System.Drawing.Font("Arial Unicode MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.Color.Maroon;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Font = new System.Drawing.Font("Book Antiqua", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label2.Location = new System.Drawing.Point(28, 125);
+            this.label2.Location = new System.Drawing.Point(46, 120);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(200, 25);
+            this.label2.Size = new System.Drawing.Size(206, 25);
             this.label2.TabIndex = 11;
-            this.label2.Text = "Просмотр теплицы";
+            this.label2.Text = " Просмотр теплицы ";
             // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.LightCoral;
-            this.button5.Location = new System.Drawing.Point(274, 335);
+            this.button5.Location = new System.Drawing.Point(276, 318);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(181, 61);
             this.button5.TabIndex = 12;

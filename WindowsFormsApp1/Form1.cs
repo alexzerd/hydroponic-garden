@@ -70,12 +70,16 @@ namespace WindowsFormsApp1
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-
+            Form5 frm5 = new Form5();
+            frm5.Show();
+            this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            Form4 frm4 = new Form4();
+            frm4.Show();
+            this.Hide();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
