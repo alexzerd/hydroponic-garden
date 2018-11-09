@@ -30,5 +30,15 @@ namespace WindowsFormsApp1
             frm1.Show();
             this.Hide();
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
