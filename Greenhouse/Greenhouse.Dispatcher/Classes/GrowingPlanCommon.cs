@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Greenhouse.Data
+namespace Greenhouse.Dispatcher.Classes
 {
-    public interface IPropertyID
+    class GrowingPlanCommon
     {
     }
 }

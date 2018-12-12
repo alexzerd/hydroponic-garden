@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Greenhouse.Dispatcher.Classes
+namespace Greenhouse.Dispatcher.Interfaces
 {
     interface IDispatcher
     {

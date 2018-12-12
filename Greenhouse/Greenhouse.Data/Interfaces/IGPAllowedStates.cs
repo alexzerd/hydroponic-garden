@@ -4,10 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Greenhouse.Data.Interfaces
+namespace Greenhouse.Data
 {
-    interface IGPAllowedStates
+    public interface IGPAllowedStates
     {
-        
+        String Name { get; }
+        Int32 Hours { get; }
+        Int32 Minutes { get; }
+        Double Progress { get; set; }
+        IInstruction GetStateByPropertyID(MeasurmentTypes.Type id);
     }
 }

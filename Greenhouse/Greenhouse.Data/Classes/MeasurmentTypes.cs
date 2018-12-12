@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Greenhouse.Data
 {
-    public interface IPropertyID
+    class MeasurmentTypes
     {
     }
 }

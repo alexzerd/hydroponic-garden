@@ -1,4 +1,5 @@
 ﻿using System;
+using Greenhouse.Data;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace Greenhouse.Dispatcher
 {
-    class Program
+    interface IGrowingPlanCommon
     {
-        static void Main(string[] args)
-        {
-        }
+        IGPAllowedStates GetAllowedStates(Int32 hours, Int32 minutes);
+
+        String CheckGrowingPlan();
     }
 }
