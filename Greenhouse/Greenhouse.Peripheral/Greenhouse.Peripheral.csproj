@@ -43,11 +43,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Devices\Device.cs" />
+    <Compile Include="Devices\Humidifier.cs" />
+    <Compile Include="Devices\Conditioner.cs" />
+    <Compile Include="Devices\FertilizerTank.cs" />
+    <Compile Include="Devices\Heater.cs" />
+    <Compile Include="Devices\Lamp.cs" />
+    <Compile Include="Devices\WaterTank.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Greenhouse.Data\Greenhouse.Data.csproj">
+      <Project>{e4ddbc79-b3f3-4872-947f-a0d4bd477299}</Project>
+      <Name>Greenhouse.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

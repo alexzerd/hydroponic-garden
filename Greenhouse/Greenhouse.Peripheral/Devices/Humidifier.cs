@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Greenhouse.Dispatcher.Classes
+namespace Greenhouse.Peripheral.Devices
 {
-    interface IGrowingPlanCommon
+    class Class1
     {
     }
 }

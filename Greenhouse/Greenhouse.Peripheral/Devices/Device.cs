@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Greenhouse.Peripheral;
+using Greenhouse.Data;
 
-namespace Greenhouse.Data.Interfaces
+
+namespace Greenhouse.Peripheral
 {
-    interface IShowInfo
+    public abstract class Device
     {
+
 
     }
 }
