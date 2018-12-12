@@ -1,7 +1,7 @@
-﻿<Window x:Class="Rybocompleks.GUI.MainWindow"
+﻿<Window x:Class="Greenhouse.GUI.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Рыбокомплекс" Height="auto" Width="auto">
+        Title="Теплица" Height="auto" Width="auto">
 
     <Grid ShowGridLines="False">
         <Grid.RowDefinitions>

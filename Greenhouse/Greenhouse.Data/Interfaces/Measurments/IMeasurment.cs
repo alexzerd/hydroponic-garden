@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Greenhouse.Data.Interfaces
+namespace Greenhouse.Data.Interfaces.Measurments
 {
-    interface IGPAllowedStates
+    interface IMeasurment
     {
-        
     }
 }

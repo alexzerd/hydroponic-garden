@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Greenhouse.Data.Interfaces
 {
-    interface IGPAllowedStates
+    interface IPropertyID
     {
-        
     }
 }
