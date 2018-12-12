@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Greenhouse.Data.Interfaces.Measurments
+namespace Greenhouse.Data
 {
-    interface IMeasurment
+    public interface IMeasurment : IPhysicalObjectState, IPropertyID
     {
+        int Compare(IMeasurment meas);
     }
 }

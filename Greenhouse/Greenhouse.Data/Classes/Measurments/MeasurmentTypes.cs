@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Greenhouse.Dispatcher
+namespace Greenhouse.Data
 {
-    public interface IDispatcher
+    static public class MeasurmentTypes
     {
     }
 }

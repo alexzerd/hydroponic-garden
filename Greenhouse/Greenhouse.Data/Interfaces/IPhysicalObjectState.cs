@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Greenhouse.Data
 {
-    class MeasurmentTypes
+    public interface IPhysicalObjectState
     {
+        String GetStringValue();
     }
 }

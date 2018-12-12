@@ -8,6 +8,8 @@ namespace Greenhouse.Data
 {
     public interface IInstruction : IPropertyID
     {
-
+        IMeasurment GetMaxAllowedState();
+        IMeasurment GetMinAllowedState();
+        String ToString();
     }
 }
