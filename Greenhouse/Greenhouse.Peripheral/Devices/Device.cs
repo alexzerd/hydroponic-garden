@@ -9,8 +9,16 @@ using Greenhouse.Data;
 
 namespace Greenhouse.Peripheral
 {
-    public abstract class Device
+    abstract public class Device
     {
+        protected IMeasurment State = null;
+        protected Location location;
+
+        public string Name { get; set; }
+        public Device (string name)
+        {
+            Name = name;
+        }
 
 
     }
