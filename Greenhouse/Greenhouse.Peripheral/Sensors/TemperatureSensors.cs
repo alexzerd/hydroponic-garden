@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Greenhouse.Data;
 
-namespace Greenhouse.Peripheral.Sensors
+namespace Greenhouse.Peripheral
 {
     public class TemperatureSensor : Sensor
     {

@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Greenhouse.DecisionMakerModule
+namespace Greenhouse.GUI.UIElements
 {
-    class Program
+    interface IHaveProp_Value
     {
-        static void Main(string[] args)
-        {
-        }
+        string Value { get; set; }
     }
 }

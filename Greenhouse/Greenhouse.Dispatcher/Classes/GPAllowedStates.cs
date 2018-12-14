@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Greenhouse.Data;
 
-namespace Greenhouse.Dispatcher.Classes
+namespace Greenhouse.Dispatcher
 {
     public class GPAllowedStates : IGPAllowedStates
     {

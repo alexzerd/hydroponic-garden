@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Greenhouse.Dispatcher
 {
-    interface IGrowingPlanCommon
+    public interface IGrowingPlanCommon
     {
         IGPAllowedStates GetAllowedStates(Int32 hours, Int32 minutes);
 

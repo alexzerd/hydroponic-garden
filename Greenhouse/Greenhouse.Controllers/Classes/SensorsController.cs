@@ -14,7 +14,7 @@ namespace Greenhouse.Controllers
         public SensorsController()
         {
             physicalObjectsController = new Controller<ISensor>();
-            physicalObjectsController.AddObject(new TemperatureSensor(new Location(50, 10)));
+            physicalObjectsController.AddObject(new TemperatureSensor(new Location(50, 1)));
             physicalObjectsController.AddObject(new TemperatureSensor(new Location(80, 50)));
             physicalObjectsController.AddObject(new OxygenSensor(new Location(50, 30)));
             physicalObjectsController.AddObject(new PhSensor(new Location(50, 60)));

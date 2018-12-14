@@ -42,7 +42,7 @@ namespace Greenhouse.Dispatcher
 
         public String CheckGrowingPlan()
         {
-            /*String message = "";
+            String message = "";
             if (AllowedStatesList.Count == 0)
                 return "План не может быть пустым!";
             else if (null == GetAllowedStates(0, 0))
@@ -62,8 +62,8 @@ namespace Greenhouse.Dispatcher
                 }
             }
 
-            return message;*/
-            return "Message!";
+            return message;
+            //return "Message!";
         }
     }
 }

@@ -59,7 +59,7 @@
                     <Image Height="16" Width="16" Source="/Content/icons/edit/paste.ico" />
                 </Button>
                 <Separator/>
-                <Button ToolTip="Запустить цикл выращивания" Click="RunGC_BtnClick">
+                <Button ToolTip="Начать выращивание" Click="RunGC_BtnClick">
                     <StackPanel Orientation="Horizontal">
                         <Image Height="16" Width="16" Source="/Content/icons/run.ico" />
                         <TextBlock Margin="5,0,0,0">Запуск</TextBlock>
@@ -68,7 +68,7 @@
 
             </ToolBar>
         </ToolBarTray>
-        <DataGrid Name="gpDataGrid" Grid.Row="2" Grid.Column="0" AutoGenerateColumns="False" Background="White"
+        <DataGrid Name="gpDataGrid" Grid.Row="2" Grid.Column="0" AutoGenerateColumns="False" Background="LightPink"
                   CanUserResizeColumns="False" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="False"
                   DataContext="{Binding Path=gpList.Instructions}" Margin="-2,0,2,0">
 
@@ -82,14 +82,15 @@
             </DataGrid.ContextMenu>
 
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Наименование стадии" Width="280" Binding="{Binding Path=InstructionName, UpdateSourceTrigger=LostFocus}"/>
-                <DataGridTextColumn Header="Часов" Width="90" Binding="{Binding Path=Hours, UpdateSourceTrigger=LostFocus}"/>
-                <DataGridTextColumn Header="Минут" Width="90" Binding="{Binding Path=Minutes, UpdateSourceTrigger=LostFocus}"/>
-                <DataGridTextColumn Header="Температура(min)" Width="90"  Binding="{Binding Path=TemperatureMin, UpdateSourceTrigger=LostFocus}"/>
-                <DataGridTextColumn Header="Температура(max)" Width="90"  Binding="{Binding Path=TemperatureMax, UpdateSourceTrigger=LostFocus}"/>
+                <DataGridTextColumn Header="Наименование стадии" Width="150" Binding="{Binding Path=InstructionName, UpdateSourceTrigger=LostFocus}"/>
+                <DataGridTextColumn Header="Часов" Width="60" Binding="{Binding Path=Hours, UpdateSourceTrigger=LostFocus}"/>
+                <DataGridTextColumn Header="Минут" Width="60" Binding="{Binding Path=Minutes, UpdateSourceTrigger=LostFocus}"/>
+                <DataGridTextColumn Header="Тmin,˚C" Width="60"  Binding="{Binding Path=TemperatureMin, UpdateSourceTrigger=LostFocus}"/>
+                <DataGridTextColumn Header="Тmax,˚C" Width="60"  Binding="{Binding Path=TemperatureMax, UpdateSourceTrigger=LostFocus}"/>
                 <DataGridTextColumn Header="Кислород" Width="90" Binding="{Binding Path=Oxygen, UpdateSourceTrigger=LostFocus}"/>
                 <DataGridTextColumn Header="Освещение" Width="90" Binding="{Binding Path=LightHoursPerDay, UpdateSourceTrigger=LostFocus}"/>
-                <DataGridTextColumn Header="pH" Width="90" Binding="{Binding Path=PH, UpdateSourceTrigger=LostFocus}"/>
+                <DataGridTextColumn Header="pH" Width="50" Binding="{Binding Path=PH, UpdateSourceTrigger=LostFocus}"/> 
+                
             </DataGrid.Columns>
 
         </DataGrid>
