@@ -38,14 +38,14 @@ namespace Greenhouse.Dispatcher
             growingPlan = gp;
         }
 
-        public void RunFishGrowing()
+        public void RunGrowing()
         {
             activeSensorsController.RunMonitoring();
             RunThread.Start();
             ClockThread.Start();
         }
 
-        public void StopFishGrowing()
+        public void StopGrowing()
         {
             RunThread.Abort();
             ClockThread.Abort();

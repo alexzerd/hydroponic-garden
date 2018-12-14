@@ -9,8 +9,8 @@ namespace Greenhouse.Dispatcher
 {
     public interface IDispatcher
     {
-        void RunFishGrowing();
-        void StopFishGrowing();
+        void RunGrowing();
+        void StopGrowing();
         ICollection<IShowInfo> GetShowInfo();
         IGPAllowedStates GetCurrentInstruction();
         DateTime GetCurrentTime();

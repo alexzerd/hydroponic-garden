@@ -162,8 +162,8 @@ namespace Greenhouse.GUI
                 Canvas.SetTop(tUI, y);
                 Canvas.SetLeft(tUI, x);
             }
-            // dgSystemCondition.Dispatcher.Invoke(delegate { dgSystemCondition.ItemsSource = states; });
-
+            
+        
         }
 
         private Boolean UpdateCurrentInstructionTable()
@@ -171,19 +171,6 @@ namespace Greenhouse.GUI
             IGPAllowedStates showingInstruction = GrowingDispatcher.GetCurrentInstruction();
             if (null == showingInstruction)
                 return false;
-            //             currentInstruction = new GPInstruction(showingInstruction);
-            //             int temperMin = currentInstruction.TemperatureMin;
-            //             int temperMax = currentInstruction.TemperatureMax;
-            //             DateTime SystemTime = GrowingDispatcher.GetCurrentTime();
-
-            //             List<CurrentInstuctDescriptionTable> currInstrDescrTable = new List<CurrentInstuctDescriptionTable>() {
-            //                 new CurrentInstuctDescriptionTable(){ ParamName="Время", ParamValue = SystemTime.Hour+" ч.  "+SystemTime.Minute +" мин."},
-            //                 new CurrentInstuctDescriptionTable(){ ParamName="Стадия", ParamValue = currentInstruction.InstructionName},
-            //                 new CurrentInstuctDescriptionTable(){ ParamName="Температура",
-            //                     ParamValue = (temperMin != temperMax) ? temperMin + " - " + temperMax + " grad" : temperMax+ " grad" },                                
-            //                 new CurrentInstuctDescriptionTable(){ ParamName="Содержание кислорода", ParamValue = currentInstruction.Oxygen.ToString()},
-            //                 new CurrentInstuctDescriptionTable(){ ParamName="Уровень кислотности", ParamValue = currentInstruction.PH.ToString()},                
-            //             };
 
             List<CurrentInstuctDescriptionTable> currInstrDescrTable = new List<CurrentInstuctDescriptionTable>() {
                 new CurrentInstuctDescriptionTable(){ ParamName="Время",
@@ -193,7 +180,7 @@ namespace Greenhouse.GUI
                 new CurrentInstuctDescriptionTable(){ ParamName="Выполнение инструкции", ParamValue = ((Int32)(showingInstruction.Progress*100)).ToString() + "%"},
                 new CurrentInstuctDescriptionTable(){ ParamName="Температура",
                     ParamValue = showingInstruction.GetStateByPropertyID(MeasurmentTypes.Type.Temperature).ToString() + " grad" },
-                new CurrentInstuctDescriptionTable(){ ParamName="Содержание кислорода",
+                new CurrentInstuctDescriptionTable(){ ParamName="Влажность",
                     ParamValue = showingInstruction.GetStateByPropertyID(MeasurmentTypes.Type.Oxygen).ToString()},
                 new CurrentInstuctDescriptionTable(){ ParamName="Уровень кислотности",
                     ParamValue = showingInstruction.GetStateByPropertyID(MeasurmentTypes.Type.PH).ToString() },
