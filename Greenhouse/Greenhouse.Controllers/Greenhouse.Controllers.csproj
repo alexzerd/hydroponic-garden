@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\ActiveSensorsController.cs" />
     <Compile Include="Classes\Controller.cs" />
     <Compile Include="Classes\DevicesController.cs" />
     <Compile Include="Classes\SensorsController.cs" />
@@ -68,7 +69,6 @@
     <Compile Include="Interfaces\IController.cs" />
     <Compile Include="Interfaces\IDevicesController.cs" />
     <Compile Include="Interfaces\ISensorsController.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -90,6 +90,10 @@
     <ProjectReference Include="..\Greenhouse.Data\Greenhouse.Data.csproj">
       <Project>{e4ddbc79-b3f3-4872-947f-a0d4bd477299}</Project>
       <Name>Greenhouse.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Greenhouse.Peripheral\Greenhouse.Peripheral.csproj">
+      <Project>{cce2dcb7-27e6-4c01-885d-96fbe79fb0d2}</Project>
+      <Name>Greenhouse.Peripheral</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

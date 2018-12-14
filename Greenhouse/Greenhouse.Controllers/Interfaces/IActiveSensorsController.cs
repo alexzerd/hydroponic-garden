@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Greenhouse.Controllers
 {
-    interface IActiveSensorsController : IController
+    public interface IActiveSensorsController : IController
     {
         void RunMonitoring();
         void StopMonitoring();

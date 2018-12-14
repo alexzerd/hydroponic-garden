@@ -7,7 +7,7 @@ using Greenhouse.Data;
 
 namespace Greenhouse.Controllers
 {
-    interface ISensorsController : IController
+    public interface ISensorsController : IController
     {
         IList<IMeasurment> GetEnvironmentStates();
     }

@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Dispatcher.cs" />
+    <Compile Include="Classes\GPAllowedStates.cs" />
     <Compile Include="Classes\GrowingPlanCommon.cs" />
     <Compile Include="Interfaces\IDispatcher.cs" />
     <Compile Include="Interfaces\IGrowingPlanCommon.cs" />
@@ -54,9 +55,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Greenhouse.Controllers\Greenhouse.Controllers.csproj">
+      <Project>{2ba0b81e-1d27-42a1-9d93-3a6576b8976a}</Project>
+      <Name>Greenhouse.Controllers</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Greenhouse.Data\Greenhouse.Data.csproj">
       <Project>{e4ddbc79-b3f3-4872-947f-a0d4bd477299}</Project>
       <Name>Greenhouse.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Greenhouse.DecisionMakerModule\Greenhouse.DecisionMakerModule.csproj">
+      <Project>{2f819141-9517-4954-b9d4-8ead24373f2e}</Project>
+      <Name>Greenhouse.DecisionMakerModule</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

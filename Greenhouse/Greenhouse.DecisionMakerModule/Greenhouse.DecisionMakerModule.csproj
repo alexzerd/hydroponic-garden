@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\DefaultStateFormer.cs" />
+    <Compile Include="Classes\LightStateFormer.cs" />
+    <Compile Include="Classes\StateFormersController.cs" />
     <Compile Include="Interfaces\IStateFormer.cs" />
     <Compile Include="Interfaces\IStateFormersController.cs" />
     <Compile Include="Program.cs" />
