@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Greenhouse.Data;
 
-namespace Greenhouse.Dispatcher
+namespace Greenhouse.Controllers
 {
-     public interface IToIGPAllowedStates
+    public interface IController
     {
-        IGPAllowedStates ToIGPAllowedStates();
+        ICollection<IShowInfo> GetShowInfo();
     }
 }

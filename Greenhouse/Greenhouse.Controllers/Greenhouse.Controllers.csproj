@@ -61,6 +61,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Controller.cs" />
+    <Compile Include="Classes\DevicesController.cs" />
+    <Compile Include="Classes\SensorsController.cs" />
+    <Compile Include="Interfaces\IActiveSensorsController.cs" />
+    <Compile Include="Interfaces\IController.cs" />
+    <Compile Include="Interfaces\IDevicesController.cs" />
+    <Compile Include="Interfaces\ISensorsController.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -78,6 +85,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Greenhouse.Data\Greenhouse.Data.csproj">
+      <Project>{e4ddbc79-b3f3-4872-947f-a0d4bd477299}</Project>
+      <Name>Greenhouse.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

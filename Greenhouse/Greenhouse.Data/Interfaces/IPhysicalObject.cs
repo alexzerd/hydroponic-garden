@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Greenhouse.Data
 {
-    public interface IShowInfo
+    public interface IPhysicalObject : IPropertyID
     {
-
+        Location GetLocation();
+        void SetLocation(Location location);
+        String Name { get; set; }
     }
 }
