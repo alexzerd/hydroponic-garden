@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Greenhouse.Data
 {
-    public interface IShowInfo
+    public interface IPHMeasurment : IMeasurment
     {
-        IPhysicalObjectState GetState();
-
-        IPhysicalObject GetItem();
+        Double GetPH();
     }
 }

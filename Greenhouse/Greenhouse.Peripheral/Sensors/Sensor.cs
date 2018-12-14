@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Greenhouse.Data
+namespace Greenhouse.Peripheral.Sensors
 {
-    public interface IShowInfo
+    class Sensor
     {
-        IPhysicalObjectState GetState();
-
-        IPhysicalObject GetItem();
     }
 }

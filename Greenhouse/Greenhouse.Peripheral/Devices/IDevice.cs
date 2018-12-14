@@ -7,9 +7,9 @@ using Greenhouse.Data;
 
 namespace Greenhouse.Peripheral
 {
-    public interface IActiveSensor : IPhysicalObject
+    public interface IDevice : IPhysicalObject
     {
+        void SetState(IMeasurment meas);
         IMeasurment GetState();
-        Boolean IsEnvironmentOK(IInstruction allowedStates);
     }
 }

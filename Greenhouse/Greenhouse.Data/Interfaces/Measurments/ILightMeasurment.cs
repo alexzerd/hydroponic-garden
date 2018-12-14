@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Greenhouse.Data
 {
-    public interface IShowInfo
+    public interface ILightMeasurment : IMeasurment
     {
-        IPhysicalObjectState GetState();
-
-        IPhysicalObject GetItem();
+        // TRUE - turned ON
+        // FALSE - turned OFF
+        Boolean GetLightState();
     }
 }

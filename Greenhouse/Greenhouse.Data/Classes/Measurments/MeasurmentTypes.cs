@@ -8,5 +8,29 @@ namespace Greenhouse.Data
 {
     static public class MeasurmentTypes
     {
+        public enum Type
+        {
+            DefaultType = 0,
+            Temperature = 1,
+            Oxygen = 2,
+            LightPerDay = 3,
+            PH = 4,
+        }
+        public static String TypeToString(Type tp)
+        {
+            switch (tp)
+            {
+                case Type.Temperature:
+                    return "Температура";
+                case Type.PH:
+                    return "Кислотность";
+                case Type.Oxygen:
+                    return "Влажность";
+                case Type.LightPerDay:
+                    return "Освещение";
+                default:
+                    return "Тип не определён";
+            }
+        }
     }
 }

@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Greenhouse.Data.Interfaces
+namespace Greenhouse.Data
 {
-    interface IActiveSensorsControllerListener
+    public interface IActiveSensorsControllerListener
     {
+        void Notify(IList<IMeasurment> dangerStates);
+        IGPAllowedStates GetCurrentInstruction();
     }
 }

@@ -8,5 +8,6 @@ namespace Greenhouse.Data
 {
     public interface IPropertyID
     {
+        MeasurmentTypes.Type GetPropertyID();
     }
 }

@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Greenhouse.Controllers
+namespace Greenhouse.Data
 {
-    class Program
+    public interface IOxygenMeasurrment : IMeasurment
     {
-        static void Main(string[] args)
-        {
-        }
+        Int32 GetOxygen();
     }
 }
