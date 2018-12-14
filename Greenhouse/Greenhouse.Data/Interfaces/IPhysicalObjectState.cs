@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Greenhouse.Dispatcher
+namespace Greenhouse.Data
 {
-    class Program
+    public interface IPhysicalObjectState
     {
-        static void Main(string[] args)
-        {
-        }
+        String GetStringValue();
     }
 }

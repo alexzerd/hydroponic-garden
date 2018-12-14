@@ -12,15 +12,16 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Greenhouse.Dispatcher;
 
 namespace Greenhouse.GUI
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для GrowingCycleWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class GrowingCycleWindow : Window
     {
-        public MainWindow()
+        public GrowingCycleWindow(IDispatcher dispatcher)
         {
             InitializeComponent();
         }

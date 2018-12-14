@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Greenhouse.Data
+namespace Greenhouse.Dispatcher.Interfaces
 {
-    class Program
+    interface IToIGPAllowedStates
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }

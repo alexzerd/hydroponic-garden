@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Greenhouse.Data
 {
-    public interface IPropertyID
+    public interface IInstruction : IPropertyID
     {
+        IMeasurment GetMaxAllowedState();
+        IMeasurment GetMinAllowedState();
+        String ToString();
     }
 }
