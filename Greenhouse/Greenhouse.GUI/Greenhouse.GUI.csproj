@@ -111,6 +111,12 @@
     <Resource Include="Content\icons\file\save.ico" />
     <Resource Include="Content\icons\run.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Greenhouse.Dispatcher\Greenhouse.Dispatcher.csproj">
+      <Project>{1171b4ca-479a-42e1-8565-17deab5f6d87}</Project>
+      <Name>Greenhouse.Dispatcher</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

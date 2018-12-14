@@ -46,10 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\MeasurmentTypes.cs" />
+    <Compile Include="Classes\Measurments\MeasurmentTypes.cs" />
     <Compile Include="Interfaces\IActiveSensorsControllerListener.cs" />
     <Compile Include="Interfaces\IGPAllowedStates.cs" />
     <Compile Include="Interfaces\IInstruction.cs" />
+    <Compile Include="Interfaces\IPhysicalObjectState.cs" />
     <Compile Include="Interfaces\IPropertyID.cs" />
     <Compile Include="Interfaces\IShowInfo.cs" />
     <Compile Include="Interfaces\Measurments\IMeasurment.cs" />
