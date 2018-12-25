@@ -27,7 +27,7 @@ namespace Greenhouse.GUI
         private IDispatcher GrowingDispatcher;
         private List<SystemConditionNode> states;
         private GPInstruction currentInstruction;
-
+        private ConfInstruction currentConf;
         private List<UIElement> mapForIUEl = new List<UIElement>();
 
         private Thread MonitorSystemThread;
@@ -41,13 +41,14 @@ namespace Greenhouse.GUI
             MonitorSystemThread = new Thread(MonitorSystem);
 
             currentInstruction = new GPInstruction(GrowingDispatcher.GetCurrentInstruction());
+            currentConf = new ConfInstruction("Нагреватель", 0, 88);
             UpdateCurrentInstructionTable();
 
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            GrowingDispatcher.RunFishGrowing();
+            GrowingDispatcher.RunGrowing();
             CrateSystemConditionCanvas();
 
             UpdateSystemConditionCanvas();
@@ -222,7 +223,7 @@ namespace Greenhouse.GUI
         private void Window_Closed(object sender, EventArgs e)
         {
             MonitorSystemThread.Abort();
-            GrowingDispatcher.StopFishGrowing();
+            GrowingDispatcher.StopGrowing();
         }
 
         private void MenuItemExit_Click(object sender, RoutedEventArgs e)

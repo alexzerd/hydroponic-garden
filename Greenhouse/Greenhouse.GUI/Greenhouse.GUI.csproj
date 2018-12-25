@@ -59,6 +59,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Data\Configuration.cs" />
+    <Compile Include="Data\ConfInstruction.cs" />
     <Compile Include="SelectStringWindow.xaml.cs">
       <DependentUpon>SelectStringWindow.xaml</DependentUpon>
     </Compile>
