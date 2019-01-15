@@ -46,11 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\ConfCommon.cs" />
+    <Compile Include="Classes\ConfMedian.cs" />
     <Compile Include="Classes\Dispatcher.cs" />
     <Compile Include="Classes\GPAllowedStates.cs" />
     <Compile Include="Classes\GrowingPlanCommon.cs" />
+    <Compile Include="Interfaces\IConfCommon.cs" />
     <Compile Include="Interfaces\IDispatcher.cs" />
     <Compile Include="Interfaces\IGrowingPlanCommon.cs" />
+    <Compile Include="Interfaces\IToConfAllowedStates.cs" />
     <Compile Include="Interfaces\IToIGPAllowedStates.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

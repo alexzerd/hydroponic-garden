@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<GrowingPlanList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Instructions>
+    <GPInstruction>
+      <InstructionName>first</InstructionName>
+      <Hours>0</Hours>
+      <Minutes>0</Minutes>
+      <TemperatureMin>1</TemperatureMin>
+      <TemperatureMax>25</TemperatureMax>
+      <Oxygen>1</Oxygen>
+      <LightHoursPerDay>1</LightHoursPerDay>
+      <PH>1</PH>
+    </GPInstruction>
+    <GPInstruction>
+      <InstructionName>second</InstructionName>
+      <Hours>0</Hours>
+      <Minutes>0</Minutes>
+      <TemperatureMin>2</TemperatureMin>
+      <TemperatureMax>25</TemperatureMax>
+      <Oxygen>2</Oxygen>
+      <LightHoursPerDay>2</LightHoursPerDay>
+      <PH>0</PH>
+    </GPInstruction>
+  </Instructions>
+</GrowingPlanList>

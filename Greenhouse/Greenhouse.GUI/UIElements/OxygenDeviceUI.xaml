@@ -4,11 +4,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Greenhouse.GUI.UIElements"
-             mc:Ignorable="d" Height="98.449" Width="86.982">
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="80">
     <Canvas>
-        <Label Canvas.Left="0" >Дозатор</Label>
-        <Label Canvas.Left="18" Canvas.Top="15">кислорода</Label>
-        <Image Canvas.Top="25" Name="img" Source="Content/oxygenDev.png" Height="80" Width="55" Canvas.Left="2"></Image>
-        <Label Name="value_lbl" Canvas.Left="62" Canvas.Top="41">98</Label>
+        <Label Canvas.Left="0" >Кондиционер</Label>
+        <Image Canvas.Top="25" Name="img" Source="Content/oxygenDev.png" Height="80" Width="60" Canvas.Left="2"></Image>
+        <Label Name="value_lbl" Canvas.Left="55" Canvas.Top="40">98</Label>
     </Canvas>
 </UserControl>

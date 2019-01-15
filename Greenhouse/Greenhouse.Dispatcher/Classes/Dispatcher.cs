@@ -20,32 +20,33 @@ namespace Greenhouse.Dispatcher
         private IActiveSensorsController activeSensorsController;
         private IStateFormersController stateFormersController;
         private IGrowingPlanCommon growingPlan;
+        private IList<Location> config;
         private Int32 Hours;
         private Int32 Minutes;
 
-        public Dispatcher(IGrowingPlanCommon gp)
+        public Dispatcher(IGrowingPlanCommon gp, IConfCommon configuration)
         {
             mutex = new Mutex();
             RunThread = new Thread(Run);
             ClockThread = new Thread(Tic_Toc);
-
+            config = ConfMedian.Configuration();
             Hours = 0;
             Minutes = 0;
-            devicesController = new DevicesController();
-            sensorsController = new SensorsController();
+            devicesController = new DevicesController(config);
+            sensorsController = new SensorsController(config);
             activeSensorsController = new ActiveSensorsController(this);
             stateFormersController = new StateFormersController();
             growingPlan = gp;
         }
 
-        public void RunFishGrowing()
+        public void RunGrowing()
         {
             activeSensorsController.RunMonitoring();
             RunThread.Start();
             ClockThread.Start();
         }
 
-        public void StopFishGrowing()
+        public void StopGrowing()
         {
             RunThread.Abort();
             ClockThread.Abort();

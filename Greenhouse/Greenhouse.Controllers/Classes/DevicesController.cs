@@ -11,14 +11,15 @@ namespace Greenhouse.Controllers
     public class DevicesController : IDevicesController
     {
         protected Controller<IDevice> physicalObjectsController;
-        public DevicesController()
+        public DevicesController(IList<Location> loc)
         {
+
             physicalObjectsController = new Controller<IDevice>();
-            physicalObjectsController.AddObject(new TemperatureDevice(new Location(10, 10)));
-            physicalObjectsController.AddObject(new TemperatureDevice(new Location(80, 80)));
-            physicalObjectsController.AddObject(new OxygenDevice(new Location(10, 30)));
-            physicalObjectsController.AddObject(new PhDevice(new Location(10, 80)));
-            physicalObjectsController.AddObject(new LightDevice(new Location(10, 50)));
+            physicalObjectsController.AddObject(new TemperatureDevice(loc[0]));
+            physicalObjectsController.AddObject(new TemperatureDevice(loc[1]));
+            physicalObjectsController.AddObject(new OxygenDevice(loc[2]));
+            physicalObjectsController.AddObject(new PhDevice(loc[3]));
+            physicalObjectsController.AddObject(new LightDevice(loc[4]));
         }
 
         public IList<IMeasurment> GetDevicesStates()

@@ -6,20 +6,11 @@
              xmlns:local="clr-namespace:Greenhouse.GUI.UIElements"
              mc:Ignorable="d" 
              d:DesignHeight="100" d:DesignWidth="85">
-
+    
     <Canvas>
         <Label Canvas.Left="3" >Нагреватель</Label>
-        <Image Name="img" Source="Content/tempDev.png" Height="58" Width="55" Canvas.Top="31" RenderTransformOrigin="0.5,0.5" Canvas.Left="4">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform AngleX="0.319"/>
-                    <RotateTransform/>
-                    <TranslateTransform X="0.179"/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
+            <Image Canvas.Top="20" Name="img" Source="Content/tempDev.png" Height="80" Width="55" Canvas.Left="2"></Image>
         <Label Name="value_lbl" Canvas.Left="60" Canvas.Top="44">0</Label>
     </Canvas>
-
+    
 </UserControl>

@@ -4,9 +4,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Greenhouse.GUI.UIElements"
-             mc:Ignorable="d" Height="105.147" Width="84.412">
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="80">
     <Canvas>
-        <Label Canvas.Left="17" Height="25" Canvas.Top="-5" >Лампа</Label>
-        <Image Canvas.Top="20" Name="img" Source="Content/lightOff.png" Height="85" Width="84"></Image>
+        <Label Canvas.Left="17" >Лампа</Label>
+        <Image Canvas.Top="20" Name="img" Source="Content/lightOff.png" Height="80" Width="80"></Image>
     </Canvas>
 </UserControl>

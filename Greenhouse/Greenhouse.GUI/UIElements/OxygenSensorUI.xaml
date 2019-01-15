@@ -8,8 +8,8 @@
              d:DesignHeight="100" d:DesignWidth="80">
     <Canvas>
         <Label Canvas.Left="10" >Датчик</Label>
-        <Label Canvas.Left="0" Canvas.Top="15">кислорода</Label>
-        <Image Canvas.Top="15" Name="img" Source="Content/oxygen.png" Height="90" Width="76" Canvas.Left="-6"/>
+        <Label Canvas.Left="0" Canvas.Top="15">Влажности</Label>
+        <Image Canvas.Top="25" Name="img" Source="Content/oxygen.png" Height="80" Width="50" Canvas.Left="2"></Image>
         <Label Name="value_lbl" Canvas.Left="55" Canvas.Top="45">98</Label>
     </Canvas>
 </UserControl>

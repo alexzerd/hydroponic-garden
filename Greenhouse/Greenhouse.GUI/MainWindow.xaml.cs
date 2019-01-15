@@ -20,6 +20,19 @@ namespace Greenhouse.GUI
 {
     public partial class MainWindow : Window
     {
+        private ConfInstruction clipboard1;
+        public ConfInstruction Clipboard1
+        {
+            get { return clipboard1; }
+            set
+            {
+                if (clipboard1 != value)
+                {
+                    clipboard1 = value;
+                }
+
+            }
+        }
         private GPInstruction clipboard;
         public GPInstruction Clipboard
         {
@@ -42,17 +55,20 @@ namespace Greenhouse.GUI
         }
 
         private GrowingPlanList gpList;
+        private ConfigurationList confList;
 
         private string gpFilePath = null;
+        private string confFilePath = null;
         public MainWindow()
         {
             InitializeComponent();
             gpList = new GrowingPlanList();
             gpDataGrid.ItemsSource = gpList.Instructions;
+            confList = new ConfigurationList();
+            confDataGrid.ItemsSource = confList.Instructions;
             UpdateWindow();
             Clipboard = null;
         }
-
 
         private void InsertIsEnabled(bool b)
         {
@@ -113,6 +129,18 @@ namespace Greenhouse.GUI
             using (FileStream fs = new FileStream(gpFilePath, FileMode.OpenOrCreate))
             {
                 gpList = (GrowingPlanList)formatter.Deserialize(fs);
+            }
+        }
+        private void LoadConfiguration()
+        {
+            if (!System.IO.File.Exists(confFilePath))
+            {
+                MessageBox.Show("указанный файл (" + confFilePath + ") отсутсвует", "Ошибка!");
+            }
+            XmlSerializer formatter = new XmlSerializer(typeof(ConfigurationList));
+            using (FileStream fs = new FileStream(confFilePath, FileMode.OpenOrCreate))
+            {
+                confList = (ConfigurationList)formatter.Deserialize(fs);
             }
         }
         private bool SaveGP()
@@ -189,6 +217,22 @@ namespace Greenhouse.GUI
                 UpdateWindow();
             }
         }
+        private void Open_BtnClickConf(object sender, RoutedEventArgs e)
+        {
+            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
+            dlg.FileName = ""; // Default file name
+            dlg.DefaultExt = ".xml"; // Default file extension
+            dlg.Filter = "xml documents (.xml)|*.xml"; // Filter files by extension
+            // Show open file dialog box
+            Nullable<bool> result = dlg.ShowDialog();
+            // Process open file dialog box results
+            if (result == true)
+            {
+                confFilePath = dlg.FileName;
+                LoadConfiguration();
+                UpdateWindow();
+            }
+        }
 
         private void New_BtnClick(object sender, RoutedEventArgs e)
         {
@@ -209,12 +253,19 @@ namespace Greenhouse.GUI
                 this.Close();
         }
 
+        private void RuGC_BtnClick(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult dialogResult = MessageBox.Show("В данной системе вы можете: " +
+                "1.выращивать растение;"+"\nВыйти?", "Внимание!", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+            if (dialogResult == MessageBoxResult.Yes)
+                this.Close();
+        }
+
 
         private void RunGC_BtnClick(object sender, RoutedEventArgs e)
         {
-            //             IList<IToGPAllowedStates> instructions_copy = new List<IToGPAllowedStates>();
-            //             foreach (IToGPAllowedStates instr in gpList.Instructions)
-            //                 instructions_copy.Add(instr);
+
+            IConfCommon configuration = new ConfCommon(confList.Instructions.ToList<IToConfAllowedStates>);
 
             IGrowingPlanCommon planForModel = new GrowingPlanCommon(gpList.Instructions.ToList<IToIGPAllowedStates>());
 
@@ -225,19 +276,17 @@ namespace Greenhouse.GUI
                 return;
             }
 
-            IDispatcher dispatcher = new Dispatcher.Dispatcher(planForModel);
+            IDispatcher dispatcher = new Dispatcher.Dispatcher(planForModel, configuration);
             GrowingCycleWindow gcw = new GrowingCycleWindow(dispatcher);
             gcw.Show();
         }
 
         private void UpdateWindow()
         {
-            // if(gpFilePath!= null)              
-            // this.Title = gpFilePath + " - Рыбокомплекс";
-            // else
-            //  this.Title = "Новый палан - Рыбокомплекс";
             gpDataGrid.ItemsSource = null;
             gpDataGrid.ItemsSource = gpList.Instructions;
+            confDataGrid.ItemsSource = null;
+            confDataGrid.ItemsSource = confList.Instructions;
         }
 
         private void SelectLineClick(object sender, RoutedEventArgs e)
@@ -258,4 +307,6 @@ namespace Greenhouse.GUI
         }
 
     }
+ 
+    
 }

@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<ConfigurationList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Instructions>
+    <ConfInstruction>
+      <DeviceName>Нагреватель</DeviceName>
+      <LocX>8</LocX>
+      <LocY>8</LocY>
+    </ConfInstruction>
+    <ConfInstruction>
+      <DeviceName>Нагреватель</DeviceName>
+      <LocX>85</LocX>
+      <LocY>12</LocY>
+    </ConfInstruction>
+    <ConfInstruction>
+      <DeviceName>Увлажнитель</DeviceName>
+      <LocX>15</LocX>
+      <LocY>90</LocY>
+    </ConfInstruction>
+    <ConfInstruction>
+      <DeviceName>Питание</DeviceName>
+      <LocX>95</LocX>
+      <LocY>95</LocY>
+    </ConfInstruction>
+        <ConfInstruction>
+      <DeviceName>Лампа</DeviceName>
+      <LocX>60</LocX>
+      <LocY>35</LocY>
+    </ConfInstruction>
+    <ConfInstruction>
+      <DeviceName>Термометр</DeviceName>
+      <LocX>10</LocX>
+      <LocY>40</LocY>
+    </ConfInstruction>
+      <ConfInstruction>
+      <DeviceName>Термометр</DeviceName>
+      <LocX>80</LocX>
+      <LocY>40</LocY>
+    </ConfInstruction>
+      <ConfInstruction>
+      <DeviceName>Датчик влажности</DeviceName>
+      <LocX>60</LocX>
+      <LocY>5</LocY>
+    </ConfInstruction>
+      <ConfInstruction>
+      <DeviceName>Датчик кислотности</DeviceName>
+      <LocX>15</LocX>
+      <LocY>25</LocY>
+    </ConfInstruction>
+      <ConfInstruction>
+      <DeviceName>Датчик освещенности</DeviceName>
+      <LocX>80</LocX>
+      <LocY>35</LocY>
+    </ConfInstruction>
+  </Instructions>
+</ConfigurationList>
